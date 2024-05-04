@@ -9,6 +9,7 @@ class Solution(object):
         factors2 = [i for i in range(1, len(str2) + 1) if len(str2) % i == 0]
 
         common_factors = sorted(set(factors1) & set(factors2), reverse=True)
+        
 
         for i in common_factors:
             if (str1.count(str1[:i]) == len(str1)/i) and (str2.count(str1[:i]) == len(str2)/i):
