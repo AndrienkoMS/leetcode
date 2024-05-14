@@ -20,13 +20,14 @@ class Solution(object):
         can_be_planted += (zeros_in_a_raw - 1) // 2
         return n<=can_be_planted
 
+
 class TestSolution(unittest.TestCase):
     def test_canPlaceFlowers(self):
         solution = Solution()
         test_cases = [
             ([1,0,0,0,1], 1, True),  # Test case 1
-            # ([1,0,0,0,1], 2, False),  # Test case 2
-            # ([0,0,1,0,1], 1, True),  # Test case 3
+            ([1,0,0,0,1], 2, False),  # Test case 2
+            ([0,0,1,0,1], 1, True),  # Test case 3
             ([1,0,0,0,1,0,0], 2, True)
         ]
         for candies, extraCandies, expected in test_cases:
