@@ -61,8 +61,8 @@ class TestSolution(unittest.TestCase):
     def test_reverseVowels(self):
         solution = Solution()
         test_cases = [
-            # ("hello", "holle"), # Test case 1,
-            # ("leetcode", "leotcede"), # Test case 2,
+            ("hello", "holle"), # Test case 1,
+            ("leetcode", "leotcede"), # Test case 2,
             ("aA", "Aa") # Test case 3
         ]
         for input, expected in test_cases:
