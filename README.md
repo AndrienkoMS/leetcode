@@ -9,4 +9,7 @@ My leetcode tasks
 
 1431 - https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/description/?envType=study-plan-v2&envId=leetcode-75
 
-605 - https://leetcode.com/problems/can-place-flowers/description/?envType=study-plan-v2&envId=leetcode-75
+345 - https://leetcode.com/problems/reverse-vowels-of-a-string/description/?envType=study-plan-v2&envId=leetcode-75
+
+151 - https://leetcode.com/problems/reverse-words-in-a-string/description/?envType=study-plan-v2&envId=leetcode-75
+
