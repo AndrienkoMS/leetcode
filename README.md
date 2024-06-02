@@ -18,3 +18,8 @@ My leetcode tasks
 334 - https://leetcode.com/problems/increasing-triplet-subsequence/description/?envType=study-plan-v2&envId=leetcode-75
 
 268 - https://leetcode.com/problems/missing-number/description/
+
+443 - https://leetcode.com/problems/string-compression/description/?envType=study-plan-v2&envId=leetcode-75
+
+283 - https://leetcode.com/problems/move-zeroes/description/?envType=study-plan-v2&envId=leetcode-75
+
