@@ -23,3 +23,6 @@ My leetcode tasks
 
 283 - https://leetcode.com/problems/move-zeroes/description/?envType=study-plan-v2&envId=leetcode-75
 
+392 - https://leetcode.com/problems/is-subsequence/description/?envType=study-plan-v2&envId=leetcode-75
+
+
