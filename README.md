@@ -26,3 +26,5 @@ My leetcode tasks
 392 - https://leetcode.com/problems/is-subsequence/description/?envType=study-plan-v2&envId=leetcode-75
 
 11 - https://leetcode.com/problems/container-with-most-water/description/?envType=study-plan-v2&envId=leetcode-75
+
+1679 - https://leetcode.com/problems/max-number-of-k-sum-pairs/description/?envType=study-plan-v2&envId=leetcode-75
