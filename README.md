@@ -1,6 +1,7 @@
 # leetcode
 My leetcode tasks
 
+## Array / String
 2235 - https://leetcode.com/problems/add-two-integers/
 
 1768 - https://leetcode.com/problems/merge-strings-alternately/description/?envType=study-plan-v2&envId=leetcode-75
@@ -21,6 +22,8 @@ My leetcode tasks
 
 443 - https://leetcode.com/problems/string-compression/description/?envType=study-plan-v2&envId=leetcode-75
 
+
+## Two Pointers
 283 - https://leetcode.com/problems/move-zeroes/description/?envType=study-plan-v2&envId=leetcode-75
 
 392 - https://leetcode.com/problems/is-subsequence/description/?envType=study-plan-v2&envId=leetcode-75
@@ -28,3 +31,7 @@ My leetcode tasks
 11 - https://leetcode.com/problems/container-with-most-water/description/?envType=study-plan-v2&envId=leetcode-75
 
 1679 - https://leetcode.com/problems/max-number-of-k-sum-pairs/description/?envType=study-plan-v2&envId=leetcode-75
+
+## Sliding Window
+643 - https://leetcode.com/problems/maximum-average-subarray-i/description/?envType=study-plan-v2&envId=leetcode-75
+
