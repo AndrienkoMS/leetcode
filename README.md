@@ -44,3 +44,4 @@ My leetcode tasks
 ## Prefix Sum
 1732 - https://leetcode.com/problems/find-the-highest-altitude/description/?envType=study-plan-v2&envId=leetcode-75
 724 - https://leetcode.com/problems/find-pivot-index/description/?envType=study-plan-v2&envId=leetcode-75
+1207 - https://leetcode.com/problems/unique-number-of-occurrences/description/?envType=study-plan-v2&envId=leetcode-75
