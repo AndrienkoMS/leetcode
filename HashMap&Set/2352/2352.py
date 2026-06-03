@@ -22,6 +22,9 @@ class Solution(object):
     #                     break
     #     return equal_pairs_quantity
 
+    # v2 using hashes
+    # Runtime: 36 ms, Beats: 69.08 %
+    # Memory: 15.60 MB, Beats: 74.56 %
     def equalPairs(self, grid):
         """
         :type grid: List[List[int]]
