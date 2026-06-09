@@ -25,31 +25,49 @@ class Solution(object):
     # v2 using hashes
     # Runtime: 36 ms, Beats: 69.08 %
     # Memory: 15.60 MB, Beats: 74.56 %
-    def equalPairs(self, grid):
-        """
-        :type grid: List[List[int]]
-        :rtype: int
-        """
-        n = len(grid)
+    # def equalPairs(self, grid):
+    #     """
+    #     :type grid: List[List[int]]
+    #     :rtype: int
+    #     """
+    #     n = len(grid)
+    #
+    #     # 1. Рахуємо хеші всіх РЯДКІВ.
+    #     # Перетворюємо кожен рядок на tuple, щоб його можна було захешувати.
+    #     # Counter автоматично підрахує, скільки разів трапляється кожен рядок.
+    #     row_counts = Counter(tuple(row) for row in grid)
+    #
+    #     equal_pairs_quantity = 0
+    #
+    #     # 2. Ітеруємося по СТОВПЦЯХ
+    #     for j in range(n):
+    #         # Збираємо j-й стовпець у кортеж
+    #         column = tuple(grid[i][j] for i in range(n))
+    #
+    #         # Якщо хеш цього стовпця є в нашому словнику рядків,
+    #         # додаємо кількість його появ до результату
+    #         if column in row_counts:
+    #             equal_pairs_quantity += row_counts[column]
+    #
+    #     return equal_pairs_quantity
 
-        # 1. Рахуємо хеші всіх РЯДКІВ.
-        # Перетворюємо кожен рядок на tuple, щоб його можна було захешувати.
-        # Counter автоматично підрахує, скільки разів трапляється кожен рядок.
-        row_counts = Counter(tuple(row) for row in grid)
+    # Runtime: 19 ms, Beats: 94.79 %
+    # Memory: 15.60 MB, Beats: 74.62 %
+    def equalPairs(self, grid: list[list[int]]) -> int:
 
-        equal_pairs_quantity = 0
+        tpse = Counter(zip(*grid))  # <-- determine the transpose
+        #     and hash the rows
+        t1 = zip(*grid)
+        print(f'{type(t1)=}')
+        print(f't1={t1}')
 
-        # 2. Ітеруємося по СТОВПЦЯХ
-        for j in range(n):
-            # Збираємо j-й стовпець у кортеж
-            column = tuple(grid[i][j] for i in range(n))
+        grid = Counter(map(tuple, grid))  # <-- hash the rows of grid. (Note the tuple-map, so
+        #     we can compare apples w/ apples in next step.)
+        t2 = map(tuple, grid)
+        print(f'{type(t2)=}')
+        print(f'{t2=}')
 
-            # Якщо хеш цього стовпця є в нашому словнику рядків,
-            # додаємо кількість його появ до результату
-            if column in row_counts:
-                equal_pairs_quantity += row_counts[column]
-
-        return equal_pairs_quantity
+        return sum(tpse[t] * grid[t] for t in tpse)  # <-- compute the number of identical pairs
 
 class test_Solution(unittest.TestCase):
     def test_equalPairs(self):
